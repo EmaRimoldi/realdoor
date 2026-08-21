@@ -361,3 +361,4 @@ changes: official 6/6 exact.
   "how did you extract the 56k?" (explained by document type/field/page only — context stays
   anonymized) all reach the model with few-shot guidance. 27/27 policy+eval tests, live gpt-4o 6/6,
   browser E2E green; "Am I eligible?" still refused.
+- 2026-08-21 · no-mistakes pipeline trial from a treehouse worktree.
