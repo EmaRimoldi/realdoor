@@ -339,6 +339,7 @@ denial / priority decision (and it risks DQ). Accessibility is scored per the br
 | `docs/FRONTEND-DESIGN.md` | Design system (source of truth for visuals/UX) |
 | `docs/ARCHITECTURE.md` | Architecture and risk note |
 | `docs/AI_SPEC.md` | AI behavior, data flow, and boundaries |
+| `docs/DEVELOPMENT.md` | Local setup, tests, service configuration, and deployment |
 | `docs/BUILDLOG.md` | Development history and decisions |
 | `frontend/` | Next.js app: `app/`, `components/`, `lib/`, `public/`, `next.config.ts` |
 | `origin/codex/add-realdoor-starter-pack` | Organizer starter pack (Python reference, data, rules, eval, governance) — **unmerged** |

@@ -1,5 +1,13 @@
 # BUILDLOG
 
+## 2026-10-21 — Present RealDoor as a product
+
+- Rewrote the project README around the live demo and the Profile, Understand,
+  and Prepare journey, with a screenshot captured from the deployed application.
+- Added team credits and Emanuele Rimoldi's contribution, grounded in Git history.
+- Moved the system diagram and detailed product flow into the architecture guide.
+- Collected development, testing, service, and deployment details in a dedicated guide.
+
 ## 2026-10-21 — Organize repository documentation
 
 - Moved architecture, AI specification, frontend design, and this development log into `docs/`.
