@@ -34,15 +34,10 @@ This is a Hack-Nation 2026 prototype for the RealPage challenge. Its rules and
 income thresholds are frozen to the Boston-area FY2026 LIHTC scenario. Use
 synthetic documents for the demo; it is not a general-purpose housing adviser.
 
-## Team and contribution
+## Team
 
 Built by **Emanuele Rimoldi, Paolo Giaretta, Riccardo Neumarker, and Massimo
 Perfetti**.
-
-**Emanuele Rimoldi's contribution:** the property discovery explorer, refinements
-to the document-review and application-preparation experience, and frontend
-integration with the extraction engine. See the
-[contribution history](https://github.com/EmaRimoldi/realdoor/commits/main/?author=EmaRimoldi).
 
 ## Run locally
 
