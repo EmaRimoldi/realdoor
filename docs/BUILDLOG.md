@@ -1,5 +1,12 @@
 # BUILDLOG
 
+## 2026-10-21 — Organize repository documentation
+
+- Moved architecture, AI specification, frontend design, and this development log into `docs/`.
+- Added a documentation index and updated relative links and repository guidance.
+- Removed the obsolete challenge brief PDF from tracked files.
+- Kept the product overview and automatically loaded project guidance at the repository root.
+
 ## 2026-07-19 — Discover map fits the viewport on every screen
 
 **Shipped (user-directed):** the Discover shell no longer uses a fixed `min-height:

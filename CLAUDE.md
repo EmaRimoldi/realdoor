@@ -2,7 +2,7 @@
 
 Project guidance for Claude Code (and humans) working in this repo. This file is auto-loaded every
 session. Read it before writing code. For visual/interaction design, see
-[`FRONTEND-DESIGN.md`](FRONTEND-DESIGN.md).
+[`docs/FRONTEND-DESIGN.md`](docs/FRONTEND-DESIGN.md).
 
 ---
 
@@ -20,7 +20,7 @@ line for the challenge and it is enforced by tests.
   lint rule ("never-strings"), not a guideline.
 
 When in doubt on anything below: pick the safest option, **abstain rather than guess/hallucinate**,
-leave a one-line note in `BUILDLOG.md` (create it if absent), and keep going.
+leave a one-line note in `docs/BUILDLOG.md` (create it if absent), and keep going.
 
 ---
 
@@ -31,9 +31,8 @@ web app that turns synthetic household documents into a human-confirmed profile,
 affordable-housing program's rules with citations, flags missing/expired documents, and produces a
 renter-controlled readiness packet — **without deciding eligibility**.
 
-- **Repo/remote:** `EmaRimoldi/snAI` (shared team repo).
+- **Repo/remote:** `EmaRimoldi/realdoor` (shared team repo).
 - **Live app:** https://realdoor-boston.vercel.app
-- **Challenge brief:** [`challenge_03.pdf`](challenge_03.pdf).
 
 ---
 
@@ -281,7 +280,7 @@ truth** — don't fabricate fixtures; if the pack is missing, stop and say so ra
 WCAG 2.2 AA is **non-negotiable** and heavily weighted (the brief cites ~15% of the rubric). Every
 surface must be keyboard-complete, focus-managed, announced via live regions, free of color-only
 signaling, and comfortable at ≥44px touch targets, honoring reduced motion. All frontend must be
-mobile-friendly (verify 320 / 375 / 768px, no horizontal overflow). **`FRONTEND-DESIGN.md` owns the
+mobile-friendly (verify 320 / 375 / 768px, no horizontal overflow). **`docs/FRONTEND-DESIGN.md` owns the
 "how" — follow it.**
 
 ---
@@ -321,7 +320,7 @@ denial / priority decision (and it risks DQ). Accessibility is scored per the br
 
 ## 15. Git & workflow
 
-- Shared repo (`EmaRimoldi/snAI`). Work on **personal branches** (`massimo/*`); **`git pull --rebase`
+- Shared repo (`EmaRimoldi/realdoor`). Work on **personal branches** (`massimo/*`); **`git pull --rebase`
   before pushing**.
 - **Conventional commits** (`feat:`, `fix:`, `refactor:`, `docs:`, `test:`, `chore:`, `perf:`, `ci:`).
 - **Don't commit or push unless the user asks.** (Attribution is disabled globally.)
@@ -335,9 +334,12 @@ denial / priority decision (and it risks DQ). Accessibility is scored per the br
 | Path | What it is |
 |---|---|
 | `CLAUDE.md` | This file — project law |
-| `FRONTEND-DESIGN.md` | Design system (source of truth for visuals/UX) |
-| `README.md` | Overview: Next.js frontend structure, dev, deploy, ground rules. `FRONTEND-DESIGN.md` is the deeper design reference |
-| `challenge_03.pdf` | Official challenge brief |
+| `README.md` | Product overview, development, testing, and deployment |
+| `docs/README.md` | Documentation index |
+| `docs/FRONTEND-DESIGN.md` | Design system (source of truth for visuals/UX) |
+| `docs/ARCHITECTURE.md` | Architecture and risk note |
+| `docs/AI_SPEC.md` | AI behavior, data flow, and boundaries |
+| `docs/BUILDLOG.md` | Development history and decisions |
 | `frontend/` | Next.js app: `app/`, `components/`, `lib/`, `public/`, `next.config.ts` |
 | `origin/codex/add-realdoor-starter-pack` | Organizer starter pack (Python reference, data, rules, eval, governance) — **unmerged** |
 
@@ -349,4 +351,4 @@ The finish line is **a running app that survives a live judged demo** — a comp
 (upload → confirm → rules Q&A with citations → readiness → packet export → safety/deletion demo),
 keyboard-only and AA, reproducing the six-household oracle exactly, with the scoreboard green and zero
 never-string hits. Prefer a **complete journey with honest abstentions** over a perfect extractor with
-no UI. When a piece stalls, ship its smallest honest version, note it in `BUILDLOG.md`, and move on.
+no UI. When a piece stalls, ship its smallest honest version, note it in `docs/BUILDLOG.md`, and move on.

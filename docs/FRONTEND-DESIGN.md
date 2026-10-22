@@ -1,11 +1,12 @@
 # RealDoor — Frontend Design System
 
 **This file is the single source of truth for RealDoor's visual and interaction design.**
-It documents the design language shipped in `frontend/` (Next.js) in more depth than `README.md` —
+It documents the design language shipped in `frontend/` (Next.js) in more depth than the
+[project README](../README.md) —
 the README covers structure, dev, and deploy; this file owns the tokens, components, and rules.
 
-Design lives in exactly one stylesheet: [`frontend/app/globals.css`](frontend/app/globals.css).
-Copy lives in [`frontend/lib/i18n.tsx`](frontend/lib/i18n.tsx). Keep it that way.
+Design lives in exactly one stylesheet: [`frontend/app/globals.css`](../frontend/app/globals.css).
+Copy lives in [`frontend/lib/i18n.tsx`](../frontend/lib/i18n.tsx). Keep it that way.
 
 ---
 
@@ -42,7 +43,7 @@ likely to rely on assistive tech, older devices, and keyboard navigation.
 5. **Mobile-first & fluid.** Fluid units before breakpoints. Works from 320px up, no horizontal
    scroll, comfortable touch targets.
 6. **Flat & warm — no dark patterns.** No shadows, no fake depth, no manipulative UI. Never use
-   decision/approval language in the interface (that's an instant disqualification — see `CLAUDE.md`).
+   decision/approval language in the interface (that's an instant disqualification — see [the project rules](../CLAUDE.md)).
 
 ---
 
@@ -371,7 +372,7 @@ Verify layouts at **320 / 375 / 768 / 1024 / 1440px** with no horizontal overflo
 - Add shadows, gradients, or blue/government styling — it breaks the system.
 - Introduce a dark theme (light-only is intentional) or new global colors outside `:root`.
 - Use color as the only signal, or omit the "Error: …" text prefix.
-- Put **any** decision/approval/eligibility language in the UI (instant DQ — see `CLAUDE.md`).
+- Put **any** decision/approval/eligibility language in the UI (instant DQ — see [the project rules](../CLAUDE.md)).
 - Ship a template-looking layout with uniform emphasis and no hierarchy.
 
 ---

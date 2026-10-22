@@ -4,7 +4,7 @@ Renter-side copilot that turns household documents into a human-confirmed profil
 affordable-housing program's rules with citations, flags missing or expired documents, and produces
 a renter-controlled application-readiness packet. **It prepares and validates the application — it
 never decides eligibility** (no approve / reject / score / rank / priority, ever).
-Challenge brief: [`challenge_03.pdf`](challenge_03.pdf) · Live app:
+Live app:
 **https://realdoor-boston.vercel.app**
 
 ```mermaid
@@ -113,10 +113,9 @@ Cross-cutting: everything is reactive; the UI is **fully localized in five langu
 TL, VI — the most spoken in the US), switchable at any time; the six official challenge households
 reproduce the organizer oracle **exactly** through both the frontend and engine paths.
 
-> The domain & safety law (red line, income math, readiness codes) lives in [`CLAUDE.md`](CLAUDE.md);
-> the visual system in [`FRONTEND-DESIGN.md`](FRONTEND-DESIGN.md); the AI layer's contract,
-> disclosure, and limits in [`AI_SPEC.md`](AI_SPEC.md); day-by-day decisions in
-> [`BUILDLOG.md`](BUILDLOG.md).
+See the [documentation index](docs/README.md) for the architecture, frontend design,
+AI specification, and development history. [`CLAUDE.md`](CLAUDE.md) contains the
+project's development guidance and domain rules.
 
 ## The AI assistant
 
@@ -144,7 +143,9 @@ engine/     Python extraction + rules engine (classify, extract, score) + fixtur
             deployed as a Vercel Python function at /api/engine/*
 supabase/   understand-chat edge function + _shared policy/contract modules, tests
             (node --test), migrations (i18n, ai_request_events)
-CLAUDE.md   project law · FRONTEND-DESIGN.md  design system · AI_SPEC.md  AI disclosure
+docs/       Architecture, frontend design, AI specification, and development history
+README.md   Product overview, local development, testing, and deployment
+CLAUDE.md   Project guidance, domain rules, and development workflow
 ```
 
 ## Hosting & services
@@ -189,7 +190,7 @@ The engine's own tests and the six-household oracle fixtures live under `engine/
 
 ## Local tooling (MCP)
 
-[`.mcp.json`](.mcp.json) (machine-local, gitignored) wires **Playwright** (browser E2E / responsive
+`.mcp.json` (machine-local, gitignored) wires **Playwright** (browser E2E / responsive
 checks) and **Remotion** (programmatic demo video). Both run on demand via `npx …@latest`.
 
 ## Tech stack

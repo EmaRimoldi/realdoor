@@ -11,7 +11,7 @@ __pycache__
 *.tsbuildinfo
 .env
 .env.*
-challenge_03.pdf
+/docs
 frontend/e2e-shots
 frontend/e2e-*.mjs
 frontend/start.log
