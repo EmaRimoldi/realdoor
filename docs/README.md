@@ -8,6 +8,7 @@ development, testing, and deployment.
 | [Architecture](ARCHITECTURE.md) | Components, integration boundaries, risks, and mitigations |
 | [AI specification](AI_SPEC.md) | Assistant behavior, data flow, grounding, and limits |
 | [Frontend design](FRONTEND-DESIGN.md) | Visual language, components, accessibility, and interaction rules |
+| [Development](DEVELOPMENT.md) | Local setup, tests, service configuration, and deployment |
 | [Build log](BUILDLOG.md) | Development history and implementation decisions |
 
 [Project guidance](../CLAUDE.md) remains at the repository root so development
